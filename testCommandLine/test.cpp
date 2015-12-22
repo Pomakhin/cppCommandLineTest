@@ -11,4 +11,6 @@
 Foo::Foo()
 {
     m_str = "bar"; // some comment
+    // another commetn
+    // and another one
 }
