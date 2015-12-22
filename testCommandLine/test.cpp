@@ -10,5 +10,5 @@
 
 Foo::Foo()
 {
-    m_str = "bar";
+    m_str = "bar"; // some comment
 }
