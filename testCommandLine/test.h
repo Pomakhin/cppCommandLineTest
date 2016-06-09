@@ -12,12 +12,15 @@
 #include <stdio.h>
 #include <string>
 
-class Foo
+using namespace std;
+
+class TextChecker
 {
 public:
+    static bool check(const string &value, unsigned columnCount, unsigned rowCount);
+
     std::string m_str;
-public:
-    Foo();
+
 };
 
 #endif /* test_h */
