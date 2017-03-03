@@ -126,3 +126,35 @@ bool TextChecker::check(const string &value, unsigned columnCount, unsigned rowC
     }
 }
 
+
+void Foo::test(const std::function<void()> &a_function)
+{
+    a_function();
+}
+
+void Bar::func()
+{
+    cout << "func\n";
+}
+void Bar::go()
+{
+    Foo foo;
+    foo.test(
+             [&]
+                {
+                    func();
+                });
+}
+
+
+
+
+void intrusive_ptr_add_ref(Bar* pointer)
+{
+    std::cout << "intrusive_ptr_add_ref";
+}
+
+void intrusive_ptr_release(Bar* pointer)
+{
+    std::cout << "intrusive_ptr_release";
+}

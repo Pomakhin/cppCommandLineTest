@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE20BFB41E5B43CD00A03537 /* test2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE20BFB21E5B43CD00A03537 /* test2.cpp */; };
+		CE50C3F11E685F5B00522768 /* AutoSignal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE50C3EF1E685F5B00522768 /* AutoSignal.cpp */; };
 		CE88C8A11BFB3BCD00A43AD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE88C8A01BFB3BCD00A43AD9 /* main.cpp */; };
-		CE88C8A91BFB3D8500A43AD9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE88C8A71BFB3D8500A43AD9 /* test.cpp */; settings = {ASSET_TAGS = (); }; };
+		CE88C8A91BFB3D8500A43AD9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE88C8A71BFB3D8500A43AD9 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE20BFB21E5B43CD00A03537 /* test2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test2.cpp; sourceTree = "<group>"; };
+		CE20BFB31E5B43CD00A03537 /* test2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test2.hpp; sourceTree = "<group>"; };
+		CE50C3EA1E66ED4400522768 /* SimpleEventManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleEventManager.cpp; sourceTree = "<group>"; };
+		CE50C3EB1E66ED4400522768 /* SimpleEventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleEventManager.h; sourceTree = "<group>"; };
+		CE50C3EF1E685F5B00522768 /* AutoSignal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoSignal.cpp; sourceTree = "<group>"; };
+		CE50C3F01E685F5B00522768 /* AutoSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSignal.h; sourceTree = "<group>"; };
 		CE88C89D1BFB3BCD00A43AD9 /* testCommandLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCommandLine; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE88C8A01BFB3BCD00A43AD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CE88C8A71BFB3D8500A43AD9 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
@@ -41,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE50C3E91E66ED4400522768 /* simpleEventsSystem */ = {
+			isa = PBXGroup;
+			children = (
+				CE50C3EA1E66ED4400522768 /* SimpleEventManager.cpp */,
+				CE50C3EB1E66ED4400522768 /* SimpleEventManager.h */,
+			);
+			path = simpleEventsSystem;
+			sourceTree = "<group>";
+		};
 		CE88C8941BFB3BCD00A43AD9 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +80,11 @@
 				CE88C8A01BFB3BCD00A43AD9 /* main.cpp */,
 				CE88C8A71BFB3D8500A43AD9 /* test.cpp */,
 				CE88C8A81BFB3D8500A43AD9 /* test.h */,
+				CE20BFB21E5B43CD00A03537 /* test2.cpp */,
+				CE20BFB31E5B43CD00A03537 /* test2.hpp */,
+				CE50C3EF1E685F5B00522768 /* AutoSignal.cpp */,
+				CE50C3F01E685F5B00522768 /* AutoSignal.h */,
+				CE50C3E91E66ED4400522768 /* simpleEventsSystem */,
 			);
 			path = testCommandLine;
 			sourceTree = "<group>";
@@ -93,7 +115,7 @@
 		CE88C8951BFB3BCD00A43AD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Mikhail Pomakhin";
 				TargetAttributes = {
 					CE88C89C1BFB3BCD00A43AD9 = {
@@ -125,6 +147,8 @@
 			files = (
 				CE88C8A11BFB3BCD00A43AD9 /* main.cpp in Sources */,
 				CE88C8A91BFB3D8500A43AD9 /* test.cpp in Sources */,
+				CE50C3F11E685F5B00522768 /* AutoSignal.cpp in Sources */,
+				CE20BFB41E5B43CD00A03537 /* test2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +168,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -157,7 +183,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					DEBUG,
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -166,6 +192,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./boost_1_63_0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -186,8 +213,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -196,12 +225,14 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./boost_1_63_0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -211,6 +242,8 @@
 		CE88C8A51BFB3BCD00A43AD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +274,7 @@
 				CE88C8A61BFB3BCD00A43AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

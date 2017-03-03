@@ -46,7 +46,7 @@ flags = [
 '-DDEBUG',
 '-DDRAKO_LITE',
 '-isysroot',
-'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.2.sdk',
+'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk',
 '-fasm-blocks',
 '-funroll-loops',
 '-fstrict-aliasing',
@@ -57,6 +57,7 @@ flags = [
 '-fvisibility-inlines-hidden',
 '-Wno-sign-conversion',
 '-I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.2.sdk/usr/include/libxml2',
+'-Iboost_1_63_0',
 '-ftemplate-depth=256',
 ]
 
